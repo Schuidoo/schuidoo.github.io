@@ -41,4 +41,13 @@
   li a:hover {
     background-color: #111;
   }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  body {
+    font-family: 'Helvetica', sans-serif;
+  }
   
