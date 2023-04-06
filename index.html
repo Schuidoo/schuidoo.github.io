@@ -1,38 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
-    <title>My One-Page Website</title>
-    <link rel="stylesheet" href="style.css" type="text/css" /> 
+    <title>Software Developer Portfolio</title>
+    <style>
+      /* Styles for the page */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 20px;
+      }
+      
+      .header h1 {
+        font-size: 40px;
+        color: #fff;
+        margin: 0;
+      }
+      
+      .header a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
+        background-image: url('https://images.unsplash.com/photo-1629753753134-7c75b1ba32b7');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .hero h2 {
+        font-size: 64px;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        text-shadow: 2px 2px #333;
+      }
+      
+      .cta {
+        text-align: center;
+        margin: 50px 0;
+      }
+      
+      .cta a {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 20px 40px;
+        border-radius: 5px;
+        font-size: 24px;
+        transition: background-color 0.3s;
+      }
+      
+      .cta a:hover {
+        background-color: #555;
+      }
+      
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+      }
+      
+      .project {
+        width: calc(33.33% - 20px);
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+      
+      .project:hover {
+        transform: translateY(-10px);
+      }
+      
+      .project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .project h3 {
+        font-size: 24px;
+        margin: 20px;
+      }
+      
+      .project p {
+        font-size: 18px;
+        margin: 20px;
+        color: #666;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="Subpages/about.html">About</a></li>
-          <li><a href="Subpages/projects.html">Projects</a></li>
-          <li><a href="Subpages/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="header">
+      <h1>Software Developer Portfolio</h1>
+      <a href="#">Contact</a>
     </header>
-    <main>
-      <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>This is my awesome one-page website with a navigation bar on top!</p>
-      </section>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Here's some information about me and what I do.</p>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to get in touch with me using the form below.</p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Here is a summary of my current work in progress projects:</p>
-      </section>
-    </main>
-  </body>
-</html>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Building innovative software solutions</h2>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta">
+      <a href="#">View Portfolio</a>
+    </section>
+    
+    <!-- Projects Section -->
+<section class="projects">
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1568572933382-346b3c6466c8" alt="Project 1">
+    <h3>Project 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eros in sapien convallis suscipit. Sed euismod porta mi, id cursus nunc malesuada id.</p>
+  </div>
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1553484771-32a87bfc78c4" alt="Project 2">
+    <h3>Project 2</h3>
+    <p>Quisque elementum est vitae purus imperdiet, eget vulputate quam convallis. Suspendisse porta ipsum nisl, quis venenatis odio convallis eget.</p>
+  </div>
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1532636883827-1e04c5f5d1b5" alt="Project 3">
+    <h3>Project 3</h3>
+    <p>Nam nec augue eu enim congue tincidunt eu a turpis. Donec sit amet purus consequat, efficitur augue vitae, dignissim augue. Duis nec nunc a nunc rhoncus lobortis.</p>
+  </div>
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1623044766142-50c381b9bbcc" alt="Project 4">
+    <h3>Project 4</h3>
+    <p>Fusce vitae blandit est. Aenean a enim non sapien gravida posuere. Fusce suscipit nibh ut massa suscipit, nec tempus mi fringilla.</p>
+  </div>
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1622907333135-6f5b242d5f5c" alt="Project 5">
+    <h3>Project 5</h3>
+    <p>Nulla in arcu suscipit, dignissim arcu a, blandit nisl. Maecenas vel turpis vitae elit consequat semper. Maecenas et ligula ac libero eleifend bibendum.</p>
+  </div>
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1603138258803-94b1a8aaf7c1" alt="Project 6">
+    <h3>Project 6</h3>
+    <p>Phasellus ut augue quis erat tincidunt blandit non non ex. Nulla facilisi. Sed quis mauris id urna dictum eleifend.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2023 Software Developer Portfolio. All rights reserved.</p>
+</footer>
