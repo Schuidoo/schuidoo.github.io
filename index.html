@@ -12,8 +12,36 @@
         background-color: #f2f2f2;
         color: #333;
       }
-      
-      .header {
+      /* Add some basic styling to the navigation bar */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+      /*.header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,7 +59,7 @@
         color: #fff;
         text-decoration: none;
         font-size: 18px;
-      }
+      }*/
       
       .hero {
         display: flex;
@@ -112,8 +140,14 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <h1>Software Developer Portfolio</h1>
-      <a href="#">Contact</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     
     <!-- Hero Section -->
